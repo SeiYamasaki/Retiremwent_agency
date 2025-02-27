@@ -239,7 +239,8 @@
                 <input type="text" class="form-control" id="work_address" name="work_address">
             </div>
             <div class="mb-3">
-                <label for="work_email" class="form-label">あなたの勤務先のメールアドレス ※退職を伝える方(あなたのアドレスではない)のアドレスを正確に記入ください！ ※必須</label>
+                <label for="work_email" class="form-label">あなたの勤務先のメールアドレス ※退職を伝える方(あなたのアドレスではない)のアドレスを正確に記入ください！
+                    ※必須</label>
                 <input type="text" class="form-control" id="work_email" name="work_email">
             </div>
             <div class="mb-3">
@@ -312,7 +313,7 @@
             <h4 class="section-file">ファイルアップロード</h4>
             <!-- 雇用契約書（通常アップロード + カメラ撮影） -->
             <div class="mb-3">
-                <label for="employment_contract" class="form-label">あなたの雇用契約書または労働条件通知書（撮影可）※必須</label>
+                <label for="employment_contract" class="form-label">あなたの雇用契約書または労働条件通知書（撮影可）※必須 <br>【確認】Google Chrome や Edge で 設定 > プライバシーとセキュリティ > サイトの設定 > カメラ を開き、カメラのアクセスが許可されていないとカメラは起動しません</label>
                 <input type="file" class="form-control file-input" id="employment_contract"
                     name="employment_contract" accept=".pdf,.doc,.docx,image/*" required
                     onchange="previewImage(event, 'preview_employment_contract')">
@@ -327,14 +328,14 @@
                 <img id="preview_employment_contract" src="" alt="プレビュー"
                     style="display:none; max-width: 100%; margin-top: 10px;">
 
-                <button type="button" class="btn btn-secondary" id="capture_employment_contract"
-                    style="display:none;" onclick="captureImage('employment_contract')">📸 撮影</button>
+                <button type="button" class="btn btn-secondary" id="capture_employment_contract" style="display:none;"
+                    onclick="captureImage('employment_contract')">📸 撮影</button>
                 <button type="button" class="btn btn-danger mt-2 reset-btn" id="reset_employment_contract"
                     style="display:none;" onclick="resetImage('employment_contract')">🔄 やり直す</button>
             </div>
             <!-- 身分証明書（通常アップロード + カメラ撮影） -->
             <div class="mb-3">
-                <label for="id_proof" class="form-label">あなたの身分証明書（撮影可）※必須</label>
+                <label for="id_proof" class="form-label">あなたの身分証明書（撮影可）※必須 <br>【確認】Google Chrome や Edge で 設定 > プライバシーとセキュリティ > サイトの設定 > カメラ を開き、カメラのアクセスが許可されていないとカメラは起動しません</label>
                 <input type="file" class="form-control file-input" id="id_proof" name="id_proof" accept="image/*"
                     required onchange="previewImage(event, 'preview_id_proof')">
 
@@ -348,8 +349,8 @@
                 <img id="preview_id_proof" src="" alt="プレビュー"
                     style="display:none; max-width: 100%; margin-top: 10px;">
 
-                <button type="button" class="btn btn-secondary" id="capture_id_proof"
-                    style="display:none;" onclick="captureImage('id_proof')">📸 撮影</button>
+                <button type="button" class="btn btn-secondary" id="capture_id_proof" style="display:none;"
+                    onclick="captureImage('id_proof')">📸 撮影</button>
                 <button type="button" class="btn btn-danger mt-2 reset-btn" id="reset_id_proof" style="display:none;"
                     onclick="resetImage('id_proof')">🔄 やり直す</button>
             </div>
