@@ -27,9 +27,6 @@ Route::get('/confirmation', [ConfirmationController::class, 'show'])->name('conf
 Route::post('/confirmation', [ConfirmationController::class, 'submit'])->name('confirmation.submit');
 Route::post('/submit-final', [ConfirmationController::class, 'submitFinal'])->name('confirmation.submitFinal');
 
-// PDF生成
-Route::get('/generate-pdf', [ConfirmationController::class, 'generatePdf'])->name('confirmation.generatePdf');
-
 // 拒否ページ
 Route::get('/denied', function () {
     return view('denied');
